@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: $color-green-99;
+    @include font($size: 1.8rem, $weight: 500, $color: $color-grey-30);
+    @extend %font-add;
+}
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+li a {
+    @include font($size: 1.6rem, $color: $color-absolute-white);
+    @extend %font-add;
+
+}
+
+input,select {
+    max-width: 700px;
+    min-width: 320px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid $color-green-85;
+    background: $color-absolute-white;
+}
+
+p {
+    @include font($size: 1.8rem, $weight: 500, $color: $color-grey-30);
+
+    @include media-tablet {
+        @include font($size: 1.6rem, $weight:500);
+    }
+}
+
+h1 {
+    @include font($size: 5.8rem, $weight:700, $color: $color-dark-green-15);
+    @extend %font-add;
+
+
+    @media only screen and (max-width:768px) {
+        @include font($size: 4.2rem, $weight:700);
+     }
+
+}
+
+h2 {
+    @include font($size: 5rem, $weight:700, $color: $color-dark-green-15);
+    @extend %font-add;
+
+    @include media-tablet {
+        @include font($size: 2.4rem, $weight:700);
+    }
+
+}
+
+h3 {
+    @include font($size: 3.4rem, $weight: 600, $color: $color-dark-green-15);
+    @extend %font-add;
+
+    @include media-tablet {
+        @include font($size: 2.8rem, $weight: 600, $color: $color-dark-green-15);
+    }
+
+    @media only screen and (max-width:768px) {
+        @include font($size: 1.8rem);
+     }
+    
+
+}
+
+button {
+    @include font($size: 1.8rem, $weight: Semibold, $color: $color-dark-green-15);
+    @extend %font-add;
+
+    
+    @include media-tablet {
+        @include font($size: 1.6rem);
+    }
+
+    @media only screen and (max-width:768px) {
+         @include font($size: 1.4rem);
+     }
+    
+
+}

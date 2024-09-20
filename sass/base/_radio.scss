@@ -1,0 +1,17 @@
+.radio-group input[type="radio"] {
+    display: none; /* Скрываем сами радио-кнопки */
+}
+
+.radio-group label svg {
+    color: #FFF;
+    cursor: pointer;
+}
+
+.radio-group input[type="radio"]:checked + label svg {
+    color: #CBEA7B;
+}
+
+.radio-group {
+    display: flex;
+    gap: 60px;
+}

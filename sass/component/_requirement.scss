@@ -1,0 +1,110 @@
+.requirement {
+    margin-bottom: 100px;
+}
+
+.requirement__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.requirement__title {
+    margin-bottom: 10px;
+}
+
+.requirement__subtitle {
+    text-align: center;
+    max-width: 656px;
+    margin-bottom: 65px;
+}
+.requirement__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: 1px solid $color-green-85;
+    background: $color-green-95;
+    border-radius: 12px;
+    padding: 41px 54px;
+    max-width: 1258px;
+    width: 100%;
+
+    @media only screen and (max-width: 880px) {
+        // align-items: normal;
+    }
+}
+.requirement__rechner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 44px;
+
+    @media only screen and (max-width: 880px) {
+        display: block;
+        flex-wrap: normal;
+        flex-direction: column;
+        align-items: center;
+
+    }
+}
+
+.daten {
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+    @media only screen and (max-width: 880px) {
+        margin-bottom: 40px;
+
+    }
+}
+
+.checkbox__field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 46px;
+    gap:15px;
+}
+
+.radio__container {
+    display: flex;
+    gap: 70px;
+
+    margin-bottom: 41px;
+}
+
+.radio-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.radio-input {
+    width: 100%;
+}
+
+.btn__calculate {
+    width: 324px;
+    margin-bottom: 54px;
+}
+
+
+.output__header {
+    display: grid;
+    grid-template-columns: 400px 100px 100px;
+    border-radius: 10px;
+    border: 1px solid $color-green-70;
+    background: $color-absolute-white;
+    padding: 20px;
+    gap: 11px;
+
+    @media only screen and (max-width: 880px) {
+        grid-template-columns: 200px 60px 60px;
+
+    }
+}
+
+

@@ -1,0 +1,189 @@
+.blogs {
+    margin-bottom: 69px;
+}
+
+.blogs__warapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.blogs__title {
+    margin-bottom: 30px;
+
+    @include media-tablet {
+        margin-bottom: 20px;
+    }
+}
+
+.blogs__subtitle {
+    text-align: center;
+    margin-bottom: 80px;
+    max-width: 998px;
+
+    @include media-tablet {
+        margin-bottom: 60px;
+    }
+}
+
+.blogs__subtitle-card {
+    margin-bottom: 30px;
+
+    @include media-tablet {
+        margin-bottom: 20px;
+        @include font($size: 1.6rem, $weight:500, $color: $color-grey-30);
+    }
+}
+
+.blogs__sub-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 16px 20px 20px;
+
+    border: 1px solid $color-green-85;
+    background: $color-green-99;
+    border-radius: 12px;
+
+    @media only screen and (max-width: 534px) {
+       flex-direction: column;
+    }
+}
+
+.blog__icon-container {
+    display: flex;
+    gap: 10px;
+    @media only screen and (max-width: 534px) {
+        align-self: flex-end;
+     }
+}
+
+.blogs__sub-box {
+    display: flex;
+    gap: 16px;
+    @media only screen and (max-width: 534px) {
+        align-self: flex-start;
+     }
+}
+
+.blogs__container {
+    // display: flex;
+    // flex-wrap: wrap;
+    gap: 30px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1596px;
+    width: 100%;
+
+    @include media-tablet {
+        gap: 20px;
+    }
+
+    @media only screen and (max-width: 1158px) {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+}
+
+.blogs__card {
+    width: 48%;
+    padding: 40px;
+    background-color: $color-green-85;
+    border-radius: 12px;
+
+    @include media-tablet {
+        width: 49%;
+        padding: 30px;
+    }
+
+    @media only screen and (max-width: 1158px) {
+        width: 79%;
+    }
+
+    @media only screen and (max-width: 880px) {
+        width: 100%;
+    }
+}
+
+.blog__img {
+    display: block;
+    max-width: 703px;
+    max-height: 428px;
+    margin-bottom: 40px;
+    width: 100%;
+
+}
+
+.blog__image {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+
+
+}
+
+
+
+.blog__sub-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    overflow: hidden;
+    .blog__sub-image {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.blog__meta {
+    @include font($size: 1.8rem, $weight: 600, $color: $color-dark-green-15);
+
+    @include media-tablet {
+        @include font($size: 1.6rem);
+    }
+}
+
+.blog__date-readtime {
+    @include font($size: 1.8rem, $weight: 500, $color: $color-grey-60);
+
+    @include media-tablet {
+        @include font($size: 1.6rem);
+    }
+}
+
+.blog__date-readtime {
+    color: $color-grey-60;
+}
+
+
+.icon-blog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    cursor: pointer;
+    padding: 18px;
+    border-radius: 8px;
+    border: 1px solid $color-green-85;
+    background: $color-green-95;
+}
+
+.like {
+    width: 24px;
+    height: 24px;
+    background-image: url(../../assets/img/Icon_herz.svg);
+
+}
+
+.save {
+    width: 24px;
+    height: 24px;
+    background-image: url("../../assets/img/Icon_speichern.svg")
+}

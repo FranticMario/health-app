@@ -1,0 +1,82 @@
+.header {
+    background-color: $color-dark-green-15;
+}
+
+.header__container-first {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 6px;
+    border: 1px solid $color-dark-green-20;
+    background: $color-dark-green-20;
+}
+
+
+.header__link-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    @extend %font-add;
+
+
+
+
+    @include font($size: 1.8rem, $weight: 600, $color: $color-absolute-white);
+
+    @include media-tablet {
+        @include font($size: 1.6rem, $weight: 600, $color: $color-absolute-white);
+    }
+
+    @media only screen and (max-width: 1016px) {
+        padding: 10px 20px;
+    }
+
+    @media only screen and (max-width: 534px) {
+        @include font($size: 1.4rem, $weight: 600, $color: $color-absolute-white);
+        gap: 14px;
+     }
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo__link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.navigation__container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+
+    @media only screen and (max-width: 928px) {
+        display: none;
+    }
+}
+
+.navigation__box {
+    display: flex;
+    gap: 26px;
+}
+
+.header__logo-icons {
+    @media only screen and (max-width: 1016px) {
+        display: none;
+    }
+}
+
+
+.header__burger {
+    display: none;
+
+    @media only screen and (max-width: 928px) {
+        display: block;
+    }
+}

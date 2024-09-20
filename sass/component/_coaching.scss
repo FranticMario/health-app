@@ -1,0 +1,138 @@
+.coaching {
+    margin-bottom: 100px;
+
+}
+
+.coaching__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    @media only screen and (max-width: 1146px) {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+.coaching__image-container {
+    max-width: 945px;
+    max-height: 826px;
+    overflow: hidden;
+    border-radius: 0px 0px 50px 0px;
+
+    background-image: url("../../assets/img/netz.png");
+    background-color: $color-green-85;
+
+}
+
+.coaching__text-container {
+    max-width: 759px;
+    padding-right: 162px;
+    @include media-tablet {
+        padding-right: 80px;
+    }
+
+    @media only screen and (max-width: 1146px) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0px;
+        position: relative;
+        text-align: center;
+    }
+    @media only screen and (max-width:768px) {
+        padding: 0 16px;
+     }
+}
+
+.coaiching__img {
+    display: block;
+    width: 100%;
+
+}
+
+
+.coaching__heading-three {
+    display: inline;
+    padding-bottom: 10px; 
+    border-bottom: 3px solid $color-green-70;
+    @media only screen and (max-width: 1146px) {
+        margin-top: 100px;
+    }
+}
+
+.coaching__heading {
+    margin-bottom: 20px;
+}
+
+.coaching__subtitle {
+    margin-bottom: 50px;
+    max-width: 759px;
+}
+
+.sub__container-image {
+    display: flex;
+    padding: 8px 10px;
+    align-items: center;
+    gap: -20px;
+    border: 1px solid $color-green-70;
+    padding: 8px 10px;
+    border-radius: 58px;
+    position: relative;
+    width: 142px;
+    height: 64px;
+}
+.coaching__btn {
+    margin-bottom: 70px;
+}
+
+.sub__container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    @media only screen and (max-width: 1146px) {
+        flex-direction: column;
+        position: absolute;
+        top: -34px;
+        order: -1;
+    }
+}
+    
+
+.sub__box {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 53px;
+    overflow: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
+
+.sub__img {
+    width: auto;
+    height: 100%;
+
+}
+
+.subscriber-first {
+    left: 10px;
+}
+
+.subscriber-second {
+    left: 40px;
+    z-index: 2;
+}
+
+.subscriber-three {
+    left: 80px;
+    z-index: 3;
+}
+
+
+.dark-green {
+    color: $color-dark-green-30;
+}
+
+
